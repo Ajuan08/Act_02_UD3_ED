@@ -22,7 +22,9 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
-  
+  /**
+   * en el constructor sin parametros
+   */
     public CCuenta ()
     {
     }
@@ -50,7 +52,7 @@ public class CCuenta {
     }
    /**
     * 
-    * @return nombre del titular de la cuenta 
+    * @return devuelve el nombre
     */
     public String obtenerNombre()
     {
@@ -59,7 +61,7 @@ public class CCuenta {
     
     /**
      * 
-     * @return saldo del saldo que tiene la cuenta
+     * @return saldo del estado que tiene la cuenta
      */
     
      public double estado ()
@@ -84,7 +86,10 @@ public class CCuenta {
             throw new Exception ("No se hay suficiente saldo");}
         setSaldo(saldo - cantidad);
     }
-    
+   /**
+    * 
+    * @return devuelve el numero de cuenta
+    */
     public String obtenerCuenta ()
     {
         return cuenta;
@@ -95,7 +100,10 @@ public class CCuenta {
     this.cuenta = cuenta;
   }
 
-  
+  /**
+   * 
+   * @param saldo //Demuestra cual es tu saldo
+   */
   public void setSaldo(double saldo) {
     this.saldo = saldo;
   }
